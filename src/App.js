@@ -11,7 +11,8 @@ import { TodoList } from './TodoList'
 const todos = [
   {text: 'Cortar Cebolla', completed: false},
   {text: 'Tomar el curso intro a react', completed: false},
-  {text: 'Llorar nomas', completed: false}
+  {text: 'Llorar nomas', completed: false},
+  {text: 'Espinoza Ceniceros Mario Alonso', completed: true}
 ]
 
 function App() {
