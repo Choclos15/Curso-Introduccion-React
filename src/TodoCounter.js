@@ -6,10 +6,10 @@ import './TodoCounter.css';
     backgroundColor: 'yellow'
 };*/
 
-function TodoCounter(){
+function TodoCounter({total, completed}){
     return(
         <h2 className="TodoCounter">
-            2 de 3 ToDo's Completados
+            {completed} de {total} ToDo's Completados
         </h2>
     );
 }
