@@ -56,6 +56,15 @@ function TodoProvider(props) {
         newTodos.splice(todoIndex, 1);
         saveTodos(newTodos);
       };
+
+      const addTodo = text => {
+        const newTodos = [...todos];
+        newTodos.push({
+            completed: false,
+            text
+        })
+        saveTodos(newTodos);
+      };
     
       // console.log('Render (Antes del use Effect)')
     
@@ -77,7 +86,8 @@ function TodoProvider(props) {
             completeTodo,
             deleteTodo,
             openModal,
-            setOpenModal
+            setOpenModal,
+            addTodo
         }}>
             {props.children}
         </TodoContext.Provider>
