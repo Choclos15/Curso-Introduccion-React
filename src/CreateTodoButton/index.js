@@ -3,12 +3,12 @@ import './CreateTodoButton.css'
 
 function CreateTodoButton(props) {
     const onClickButton = (msg) => {
-        alert(msg)
+        props.setOpenModal(true);
     }
     return (
         <button 
         className="CreateTodoButton"
-        onClick={() => onClickButton('Hola')}
+        onClick={onClickButton}
         >
             +
         </button>
